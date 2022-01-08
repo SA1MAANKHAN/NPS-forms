@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+.fas {
+  pointer-events: none;
+  margin: 0 5px;
+}
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid grey;
+  padding: 0.8rem;
+  outline: none;
+  margin: 2rem 0;
+  width: 95%;
+  font-size: 1.8rem;
+}
+
+button {
+  padding: 0.8rem 2rem;
+  background-color: #0445af;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 4px;
+  border: none;
+  margin: 2rem 0px;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: #2256aa;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 4rem;
+  width: 100%;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.form__step {
+  min-height: 87%;
+  max-width: 800px;
+  width: 51vw;
+  padding: 0 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media (max-width: 800px) {
+  .form__step {
+    width: 100vw;
+  }
+}
+
+.ratingChart__boxesContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 50px 0 20px 0;
+  width: 100%;
+}
+
+.ratingChart__boxesContainer .rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 4.5rem;
+  width: 63px;
+  cursor: pointer;
+  margin: 3px;
+  font-size: 1.2rem;
+  background-color: whitesmoke;
+  color: #535353;
+  border: 2px solid #535353;
+  border-radius: 5px;
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+
+.ratingChart__boxesContainer .rating:hover {
+  background-color: #cecece;
+}
+
+.ratingChart__infoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 0 1rem 0 0.5rem;
+  color: #535353;
+}
+
+.trainingName,
+.npsScore {
+  display: none;
+}
+
+.lowRating__stepBtn,
+.midRating__stepBtn,
+.highRating__stepBtn {
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+}
+
+.lowRating__step h1,
+.midRating__step h1,
+.highRating__step h1 {
+  margin-bottom: 4.5rem;
+}
+
+.ThankYou__step {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ThankYou__step img {
+  height: 70vw;
+  max-height: 400px;
+  padding: 1rem 0;
+}
+
+.ThankYou__step .thankyouHeading {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.ThankYou__step h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 13%;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.progress .progressContainer {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.progress .progressContainer p {
+  color: #2e2e2e;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.progress .progressContainer .progressBar {
+  margin: 0 20px;
+  width: 150px;
+  height: 20px;
+  border: 1px solid #1d1d1d;
+  border-radius: 20px;
+}
+
+@media (max-width: 800px) {
+  .progress .progressContainer .progressBar {
+    height: 15px;
+  }
+}
+
+.progress .progressContainer .progressBar .progressValue {
+  height: 100%;
+  width: 0%;
+  border-radius: 20px;
+  -webkit-transition: width 0.5s ease;
+  transition: width 0.5s ease;
+  background-color: #131313;
+}
+
+.progress .learnMoreBtn {
+  display: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin: 2rem 0px;
+}
+
+.bookNow {
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.bold {
+  font-weight: 700;
+}
+/*# sourceMappingURL=main.css.map */

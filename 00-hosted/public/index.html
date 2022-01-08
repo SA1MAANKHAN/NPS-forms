@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/343b140bdc.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script defer src="./assets/js/script.js"></script>
+    <script
+      defer
+      src="https://kit.fontawesome.com/343b140bdc.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>NPS Survey</title>
+  </head>
+  <body>
+    <div class="ratingChart__step form__step">
+      <h1 class="trainingHeading">Training Form</h1>
+      <h2>
+        How likely are you to recommend this training to a friend or colleague?
+      </h2>
+      <div class="ratingChart__boxesContainer">
+        <div class="rating rating0">0</div>
+        <div class="rating rating1">1</div>
+        <div class="rating rating2">2</div>
+        <div class="rating rating3">3</div>
+        <div class="rating rating4">4</div>
+        <div class="rating rating5">5</div>
+        <div class="rating rating6">6</div>
+        <div class="rating rating7">7</div>
+        <div class="rating rating8">8</div>
+        <div class="rating rating9">9</div>
+        <div class="rating rating10">10</div>
+      </div>
+      <div class="ratingChart__infoContainer">
+        <p>Not likely at all</p>
+        <p>Extremely likely</p>
+      </div>
+      <input
+        name="entry.1823724842"
+        type="text"
+        class="trainingName"
+        value="Training Name"
+      />
+      <input name="entry.1734149473" type="text" class="npsScore" />
+    </div>
+    <div class="lowRating__step form__step hidden">
+      <h2>
+        We're sorry to hear that - would you mind telling us why you gave that
+        score?
+      </h2>
+      <input
+        name="entry.1569876656"
+        type="text"
+        placeholder="Type your answer here..."
+        class="lowRating__input"
+        autocomplete="off"
+      />
+      <button class="lowRating__stepBtn">
+        Ok <i class="fas fa-check"></i>
+      </button>
+    </div>
+    <div class="midRating__step form__step hidden">
+      <h2>
+        Thank you. Do you have any thoughts on how we could improve this
+        training?
+      </h2>
+      <input
+        name="entry.251680733"
+        type="text"
+        placeholder="Type your answer here..."
+        class="midRating__input"
+        autocomplete="off"
+      />
+      <button class="midRating__stepBtn">
+        Ok <i class="fas fa-check"></i>
+      </button>
+    </div>
+    <div class="highRating__step form__step hidden">
+      <h2>
+        That's great to hear. If you were to recommend us, what would you most
+        likely say?
+      </h2>
+      <input
+        name="entry.1253476587"
+        type="text"
+        placeholder="Type your answer here..."
+        class="highRating__input"
+        autocomplete="off"
+      />
+      <button class="highRating__stepBtn">
+        Ok <i class="fas fa-check"></i>
+      </button>
+    </div>
+
+    <div class="ThankYou__step form__step hidden">
+      <img src="./assets/img/thank-you.jpg" alt="" />
+      <h2 class="thankyouHeading"><span class="bold"> Thank You! </span></h2>
+      <h2>
+        We'll use your feedback to improve the way we design and deliver our
+        trainings.
+      </h2>
+    </div>
+    <div class="progress">
+      <div class="progressContainer">
+        <p><span class="numProgress">0</span> of 2 answered</p>
+        <div class="progressBar"><div class="progressValue"></div></div>
+      </div>
+      <button class="learnMoreBtn">Keep Learning</button>
+    </div>
+  </body>
+</html>
